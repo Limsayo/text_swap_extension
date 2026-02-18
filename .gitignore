@@ -1,0 +1,18 @@
+# 1. Dependency directories (The most important one!)
+node_modules/
+
+# 2. Build outputs (Good to have for the future)
+out/
+dist/
+*.vsix
+
+# 3. System files (Junk files from your OS)
+.DS_Store
+Thumbs.db
+
+# 4. Logs
+npm-debug.log
+yarn-error.log
+
+# 5. VS Code local settings (Optional)
+.vscode/

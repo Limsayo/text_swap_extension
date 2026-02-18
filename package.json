@@ -1,0 +1,25 @@
+{
+  "name" : "swap-split-extension",
+  "displayName": "Swap Split",
+  "description": "Splits the line at the cursor and swaps the right side above the left side",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands":[
+      {
+        "command": "swap-split.execute",
+        "title": "Swap Split Line"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "swap-split.execute",
+        "key": "ctrl+alt+enter",
+        "when": "editorTextFocus && !findWidgetVisible"
+      }
+    ]
+  }
+}
